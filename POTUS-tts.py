@@ -66,9 +66,8 @@ if (ui[0]=='#'):
     s=df.loc[idx, 'Presidents']
     print("Number {0} president: ".format(idx +1), end='')
     print(s)
-    intro="Number ", idx+1, " president of USA is..."
-    speakIt(intro,0)
-    speakIt(s,0)
+    intro="Number ", idx+1, " president of USA is..." + s
+    speakIt(intro,1)
 
 elif (ui.isdigit):
     if (int(ui) <99):
